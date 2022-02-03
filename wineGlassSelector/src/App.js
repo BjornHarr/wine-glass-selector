@@ -11,23 +11,25 @@ import Filter from './Components/Filter/Filter';
 
 function App() {
 
+    const [searchQuery, setSearchQuery] = useState('');
     const [glassSeries, setGlassSeries] = useState('Vinum');
     const [glassList, setGlassList] = useState([]);
+    const [fullGlassList, setFullGlassList] = useState([]);
 
     useEffect(() => {
-        console.log("setNewGlassSeries");
         glassesSeries.map((series) => {
             if (glassSeries === series.name){
                 setGlassList(series.glasses);
+                setFullGlassList(series.glasses);
             }
         })
     },[glassSeries]);
-    
+
 
     return (
         <main>
-            <Search grapes={grapes} glassList={glassList} setGlassList={setGlassList} />
-            <Filter setGlassSeries={setGlassSeries} />
+            <Search grapes={grapes} glassList={fullGlassList} setGlassList={setGlassList} searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+            <Filter setGlassSeries={setGlassSeries} setSearchQuery={setSearchQuery} />
             <List items={ glassList }/>
         </main>
     );

@@ -4,8 +4,7 @@ import { useEffect, useState } from 'react';
 
 const Search = (props) => {
 
-    const { grapes, glassList, setGlassList } = props;
-    const [searchQuery, setSearchQuery] = useState('');
+    const { grapes, glassList, setGlassList, searchQuery, setSearchQuery } = props;
 
     const filterItems = (glassList) => {
         return glassList.filter((item) => {

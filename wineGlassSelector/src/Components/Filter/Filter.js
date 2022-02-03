@@ -2,12 +2,17 @@ import './Filter.css'
 
 const Filter = (props) => {
 
-    const {setGlassSeries} = props;
+    const {setGlassSeries,setSearchQuery} = props;
+
+    function updateGlassSeries(glassSeries){
+        setGlassSeries(glassSeries)
+        setSearchQuery('');
+    }
 
     return (
         <section className='filters'>
-            <button onClick={() => setGlassSeries('Veritas')}> Veritas</button>
-            <button onClick={() => setGlassSeries('Vinum')}> Vinum</button>
+            <button onClick={() => updateGlassSeries('Veritas')}> Veritas</button>
+            <button onClick={() => updateGlassSeries('Vinum')}> Vinum</button>
         </section>
     );
 }
