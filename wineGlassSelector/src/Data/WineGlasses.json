@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Vinum",
+        "glasses": [
+            {"code":0,"name":"Bordeaux Grand Cru"},
+            {"code":2,"name":"Water"},
+            {"code":5,"name":"Viognier / Chardonnay"},
+            {"code":7,"name":"Pinot Noir (Burgundy Red)"},
+            {"code":8,"name":"Champagne Flute"},
+            {"code":15,"name":"Riesling / Zinfandel"},
+            {"code":16,"name":"Cabernet Sauvignon / Merlot (Bordeaux)"},
+            {"code":18,"name":"Brandy"},
+            {"code":21,"name":"Gourmet Glass"},
+            {"code":28,"name":"Vintage Champagne Glass"},
+            {"code":33,"name":"Dessert Wine"},
+            {"code":48,"name":"Cuvée prestige"},
+            {"code":58,"name":"Champagne Glass"},
+            {"code":60,"name":"Port"},
+            {"code":67,"name":"New World Pinot Noir"},
+            {"code":71,"name":"Cognac Hennessy"},
+            {"code":75,"name":"Daiginjo"},
+            {"code":77,"name":"Martini"},
+            {"code":80,"name":"Single Malt Whiskey"},
+            {"code":90,"name":"Brunello Di Montalcino"},
+            {"code":97,"name":"Oaked Chardonnay"}
+        ]
+    },
+    {
+        
+        "name": "Veritas",
+        "glasses": [
+            {"code":0,"name":"Cabernet / Merlot"},
+            {"code":2,"name":"Water"},
+            {"code":5,"name":"Viognier / Chardonnay"},
+            {"code":7,"name":"Old world Pinot Noir"},
+            {"code":9,"name":"Coupe / Cocktail"},
+            {"code":11,"name":"Beer"},
+            {"code":15,"name":"Riesling / Zinfandel"},
+            {"code":28,"name":"Champagne Wine Glass"},
+            {"code":30,"name":"New World Shiraz"},
+            {"code":33,"name":"Sauvignon Blanc"},
+            {"code":41,"name":"Old World Syrah"},
+            {"code":67,"name":"New World Pinot Noir / Nebiolo / Rosé / Champagne"},
+            {"code":71,"name":"Spiritus"},
+            {"code":97,"name":"Oaked Chardonnay"}
+        ]
+    }
+]

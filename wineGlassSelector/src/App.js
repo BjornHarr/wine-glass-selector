@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 
+import grapes from './Data/Grapes.json';
+import glassesSeries from './Data/WineGlasses.json';
+
+import { useState, useEffect } from 'react';
+
+import List from './Components/List/List';
+import Search from './Components/Search/Search';
+import Filter from './Components/Filter/Filter';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [glassSeries, setGlassSeries] = useState('Vinum');
+    const [glassList, setGlassList] = useState([]);
+
+    useEffect(() => {
+        console.log("setNewGlassSeries");
+        glassesSeries.map((series) => {
+            if (glassSeries === series.name){
+                setGlassList(series.glasses);
+            }
+        })
+    },[glassSeries]);
+    
+
+    return (
+        <main>
+            <Search grapes={grapes} glassList={glassList} setGlassList={setGlassList} />
+            <Filter setGlassSeries={setGlassSeries} />
+            <List items={ glassList }/>
+        </main>
+    );
 }
 
 export default App;
